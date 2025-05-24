@@ -1,103 +1,73 @@
-Web Design Projects
-This repository contains two responsive web design projects:
+# 🕷 Spiderman & 🚗 Lamborghini Landing Pages
 
-Spiderman Game Landing Page
+Two responsive landing pages built with Bootstrap 5 showcasing different design approaches.
 
-Lamborghini Showcase Page
+## 🕷 Spiderman Landing Page
 
-Project 1: Spiderman Game Landing Page
-Features:
-Responsive design with mobile-first approach
+### 🎯 Features
+- 🖥️ Fully responsive design
+- 🎥 Video popup functionality
+- ✨ CSS animations and hover effects
+- 🔍 Blur effect navigation
+- 📱 Mobile-first approach
 
-Interactive elements:
+### 🛠️ Technologies Used
+- HTML5
+- CSS3 (with custom animations)
+- Bootstrap 5
+- Bootstrap Icons
 
-Video popup modal
+### 📱 Responsive Breakpoints
+- Mobile (300px+)
+- Desktop (800px+)
 
-Hover animations on buttons and icons
+### 🎨 Design Elements
+- Hero section with Spiderman image
+- Game reviews section with circular badges
+- Platform icons with hover effects
+- Banner image with play button
 
-Smooth transitions
+---
 
-Bootstrap 5 framework
+## 🚗 Lamborghini Landing Page
 
-Custom CSS animations
+### 🎯 Features
+- 🖥️ Responsive layout with different orientations
+- 🏎️ Car specifications display
+- ✨ CSS animations on load
+- 🟡 Yellow accent color theme
+- 📐 Geometric design elements
 
-Clean, modern UI with Spiderman theme
+### 🛠️ Technologies Used
+- HTML5
+- CSS3 (with keyframe animations)
+- Bootstrap 5
+- Bootstrap Icons
 
-Technologies Used:
-HTML5
+### 📱 Responsive Breakpoints
+- Mobile (300px+) - vertical orientation
+- Desktop (800px+) - horizontal orientation
 
-CSS3 (with custom animations)
+### 🎨 Design Elements
+- Large "LAMBORGHINI" text background
+- Car image with specifications
+- Animated stat cards
+- Blur effect navigation
 
-Bootstrap 5
+---
 
-Bootstrap Icons
+## 🚀 How to Use
+1. Clone the repository
+2. Open `index.html` in your browser
+3. For Spiderman page:
+   - Click the play button to view the video popup
+4. For Lamborghini page:
+   - View the responsive layout changes
 
-JavaScript for interactive elements
+## 📝 Notes
+- Both pages use Bootstrap 5 for layout and components
+- Custom CSS provides unique animations and effects
+- Pages are designed to showcase different approaches to landing page design
 
-Key Components:
-Navigation bar with blur effect
-
-Hero section with game information
-
-Game reviews display
-
-Platform compatibility icons
-
-Promotional banner with video play button
-
-Project 2: Lamborghini Showcase Page
-Features:
-Responsive design with different layouts for mobile and desktop
-
-Animated text and image elements
-
-Interactive card components with hover effects
-
-Elegant black and gold color scheme
-
-Bootstrap 5 framework
-
-Custom CSS animations
-
-Technologies Used:
-HTML5
-
-CSS3 (with keyframe animations)
-
-Bootstrap 5
-
-Bootstrap Icons
-
-Key Components:
-Fixed navigation bar
-
-Large display text with rotation effect on mobile
-
-Centered Lamborghini vehicle image
-
-Performance statistics cards
-
-Responsive layout adjustments
-
-How to Use
-Clone the repository
-
-Open the HTML files in your browser to view the projects
-
-Resize the browser window to see the responsive behavior
-
-Customization
-You can easily customize:
-
-Colors by modifying the CSS variables
-
-Content by editing the HTML
-
-Animations by adjusting the keyframes in the CSS
-
-Browser Support
-Both projects are designed to work on modern browsers including Chrome, Firefox, Safari, and Edge.
-
-License
-These projects are open-source and available for personal and educational use.
-
+## 📜 License
+MIT License - Feel free to use and modify these templates for your projects!
