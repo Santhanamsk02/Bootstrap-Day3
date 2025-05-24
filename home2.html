@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Spiderman</title>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+        <style>
+          
+            .num
+            {
+                border: 2px solid white;
+                border-radius: 50%;
+                padding: 10px;
+            }
+            main
+            {
+                min-height: 100vh;
+                background-image: url(img/spider3.png);
+                background-size: cover;
+                background-position: center;
+            }
+            @media(min-width:300px)
+            {
+                nav
+                {
+                    backdrop-filter: blur(10px);
+                }
+                .ban
+                {
+                    width: 100% !important;
+                }
+                .bani
+                {
+                    left:50% !important;
+                }
+                .popup
+                {
+                    height: 129vh;
+                }
+                .popup iframe
+                {
+                    width: 80%;
+                    height: 25%;
+                }
+                .popup i
+                {
+                    top:31%;
+                    padding: 7px;
+                    padding-inline: 10px;
+                    right:5%;
+                }
+                
+            }
+            @media(min-width:800px)
+            {
+                nav
+                {
+                    backdrop-filter: blur(0px) !important;
+                }
+                .ban
+                {
+                    width: 50% !important;
+                }
+                .bani
+                {
+                    left:73% !important;
+                }
+                .popup
+                {
+                    height: 100vh;
+                }
+                .popup iframe
+                {
+                    height: 75%;
+                }
+                .popup i
+                {
+                    font-size: 22px;
+                    padding-inline: 15px !important;
+                    padding: 7px;
+                    top:10%;
+                    right:5%;
+                }
+            }
+            .popup i
+            {
+                position: absolute;
+                z-index: 5;
+                color: white;
+                border: 1px solid white;
+                background-color: red;
+                border-radius: 10px;
+                font-weight: 900 !important;
+            }
+            .popup
+            {
+                width: 100vw;
+                position: absolute;
+                z-index: 10;
+                background-color: rgba(0, 0, 0, 0.735);
+                backdrop-filter: blur(5px);
+            }
+            .show
+            {
+                display: flex !important;
+            }
+            .btn3
+            {
+                position: relative;
+                z-index: 1;
+                transition: all 0.3s;
+                overflow: hidden;
+            }
+            .btn3::after
+            {
+                content: '';
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                background-color: red;
+                top:0;
+                left: -215px;
+                border-radius: 40px;
+                z-index: -1;
+                transition: all 0.5s;
+
+            }
+            .btn3:hover
+            {
+                color: white !important;
+                
+            }
+            .btn3:hover::after
+            {
+                left:0;
+            }
+            .btn1
+            {
+                transition: all 0.5s;
+            }
+            .btn1:hover
+            {
+                transform: translateY(-10px);
+            }
+            .ic
+            {
+                transition: all 0.5s;
+            }
+            .ic:hover
+            {
+                transform: translateY(-15px) scale(1.4);
+                cursor: pointer;
+            }
+            @keyframes comer
+            {
+                from
+                {
+                    transform: translateX(200px);
+                    opacity: 0;
+                }
+                to
+                {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+            @keyframes comel
+            {
+                from
+                {
+                    transform: translateX(-200px);
+                    opacity: 0;
+                }
+                to
+                {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+            .con1
+            {
+                animation: comel 1s;
+            }
+            .con2
+            {
+                animation: comer 1s;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-md  bg-transparent fixed-top navbar-dark nav-underline" style="backdrop-filter: blur(10px);">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class=" navbar-brand fw-bold fs-3"><img src="img/logo.png" class=" ig img-fluid" style="width: 50px;"></a>
+                <button class=" navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                    <span class=" navbar-toggler-icon"></span>
+                </button>
+                
+                
+                <div class=" collapse navbar-collapse justify-content-center" id="nav">
+                    <div class=" navbar-nav gap-5 justify-content-center" >
+                        <a href="#" class=" nav-link fw-semibold mt-4 mt-md-0 text-light fw-medium">Games</a>
+                        <a href="#" class=" nav-link  fw-semibold  text-light fw-medium">News</a>
+                        <a href="#" class=" nav-link  fw-semibold  text-light fw-medium">Store</a>
+                        <a href="#" class=" nav-link  fw-semibold  text-light fw-medium">Services</a>
+                        <button class="btn btn-light float-end d-md-none" style="color: red;">Login</button>
+                        
+                    </div>
+                    
+                </div>
+                <div class="navbar-nav justify-content-end d-none d-md-block">
+                    <button class="btn btn-light rounded-5 px-4 fw-medium btn1" style="color: red;">Login</button>
+                </div>
+               
+                
+            </div>
+        </nav>
+        <main class="d-flex align-items-center">
+            <div class="container mt-5 d-flex flex-column  justify-content-between">
+                <div class="row gap-5 gap-md-0 mt-5">
+                    <div class="col-md-4 col-12 mt-5 mt-md-0 con1">
+                        <img src="img/hero.png" class=" img img-fluid">
+                        <p class="text-light fs-5 fw-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, distinctio consectetur incidunt odio aliquam sint et magni doloribus voluptate laboriosam</p>
+                        <button class=" btn btn-light px-4 rounded-5 fs-5 fw-medium btn3" style="color: red;">PRE-ORDER NOW</button>
+                    </div>
+                    <div class="col-4 d-none d-md-flex"></div>
+                    <div class="col-md-4 col-12 text-light fw-medium mt-md-5 con2">
+                        <p class=" text-center fs-3 text-decoration-underline ">GAME REVIEWS</p>
+                        <p class=" position-relative fs-5 ms-5 fw-bold mt-4">
+                            <span class="num me-4 position-relative" style="top:7px">9.9</span>IGN<br>
+                            <span class=" ms-5 position-relative" style="left:17px">-Potentail Game of the year</span>
+                        </p>
+                        <p class=" position-relative fs-5 ms-5 fw-bold mt-4">
+                            <span class="num me-4 position-relative" style="top:7px">9.7</span>GAMESRADAR<br>
+                            <span class=" ms-5 position-relative" style="left:17px">-Playstation's Masterpiece</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 d-flex align-items-center align-items-md-end">
+                        <div class="icons d-flex gap-5 text-light fs-4">
+                            <i class="bi bi-playstation ic"></i>
+                            <i class="bi bi-xbox ic"></i>
+                            <i class="bi bi-windows ic"></i>
+                        </div>
+                    </div>
+                    <div class="col-4 d-none"></div>
+                    <div class="col-6 d-flex justify-content-end position-relative banner con2">
+                        <img src="img/Spider-Man-Black-and-Gold-suit.jpg" class=" img img-fluid w-75 ban" style="border:5px solid white">
+                        <i class="bi bi-play-circle-fill fs-1 text-light position-absolute bani" style="left:60%;top:30%"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="popup d-flex justify-content-center align-items-center d-none">
+                <iframe  src="https://www.youtube-nocookie.com/embed/3wHL2VIaFcs?si=MKkfiesK9n6d5QEj" title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <i class="bi bi-x-lg"></i>
+            </div>
+        </main>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            let ban=document.querySelector(".banner i")
+            let popup=document.querySelector(".popup")
+            let close=document.querySelector(".popup i")
+            let vid=document.querySelector("iframe")
+            ban.addEventListener("click",()=>
+            {
+                popup.classList.add("show")
+                
+            })
+            close.addEventListener("click",()=>
+            {
+                popup.classList.remove("show")
+            })
+        </script>
+    </body>
+</html>
